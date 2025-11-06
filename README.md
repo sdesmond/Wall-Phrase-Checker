@@ -1,6 +1,6 @@
 # Tile Wall Phrase Checker
 
-This repository contains tools to check whether a phrase can be constructed from a collection of physical tiles that are hung on a wall-mounted display. The project provides:
+A simple web UI to checker to accompany the [Wall Mounted Tile Display on MakerWorld](https://makerworld.com/en/models/1964330-wall-tile-display).  It checks whether a phrase can be constructed from a given set of tiles and spaces to hang them. The project provides:
 
 - A CLI script (`c:\dev\tile_checker.js`) for interactive checks (Node.js required).
 - A static web UI (`c:\dev\web`) for quick visual checks and experimentation.
