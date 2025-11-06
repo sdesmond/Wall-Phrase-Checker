@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tile Wall Phrase Checker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Tile Wall Phrase Checker</h1>
+
+    <section class="controls">
+      <label>Number of rows: <input id="rows" type="number" min="1" value="5"></label>
+      <label>Characters per row: <input id="rowLength" type="number" min="1" value="28"></label>
+
+      <label class="full">Single-sided tiles formatted <code>letter:copies</code> separated by space (e.g. <code>A:5 B:3 C:3</code>). To specify a colon as the character, use <code>"\:"</code>.
+        <input id="singleTiles" type="text" value="E:11 T:8 A:7 O:7 I:7 N:7 S:6 R:6 H:6 L:4 D:4 C:3 U:3 M:2 F:2 Y:2 W:2 G:2 P:2 B:2 K:2 V:2 X:2 Q:2 J:2 Z:2">
+      </label>
+
+      <label class="full">Phrase:
+        <input id="phrase" type="text" value="HELLO WORLD">
+      </label>
+
+      <div class="buttons">
+        <button id="checkBtn">Check Phrase</button>
+        <button id="clearBtn">Clear</button>
+      </div>
+      <label class="full"><input id="showLeftover" type="checkbox"> Report leftover tiles after success</label>
+    </section>
+
+    <section id="result" class="result">
+      <!-- populated by script -->
+    </section>
+
+    <section class="notes">
+      <p>Notes: Spaces do not require tiles. Matching is case-insensitive.</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
